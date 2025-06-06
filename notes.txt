@@ -20,3 +20,40 @@
       </style></t>
    </xpath>
 </data>
+
+
+
+<!-- Odoo 18 -->
+<data inherit_id="web.layout">
+  <xpath expr="//body" position="inside">
+    <t t-if="request.httprequest.cookies.get('cids') and request.httprequest.cookies.get('cids')[0] == '1'">
+      <style>.o_main_navbar  {background: linear-gradient(45deg, #ffcccc, #ffcccc); 
+                             background-color: #ffcccc!important;
+                             border-bottom: 0px;
+                                         }
+            .dropdown-toggle  {background: linear-gradient(45deg, #ffcccc, #ffcccc); 
+                             background-color: #ffcccc!important;
+                             border-bottom: 0px;
+                                         }
+            .o_nav_entry  {background: linear-gradient(45deg, #ffcccc, #ffcccc); 
+                             background-color: #ffcccc!important;
+                             border-bottom: 0px;
+                                         }</style></t> 
+    <t t-if="request.httprequest.cookies.get('cids') and request.httprequest.cookies.get('cids')[0] == '2'">
+      <style>.o_main_navbar {background: linear-gradient(45deg, #ccccff, #ccccff); 
+                                         background-color: #ccccff!important;border-bottom: 0px;}
+            .dropdown-toggle {background: linear-gradient(45deg, #ccccff, #ccccff); 
+                                         background-color: #ccccff!important;border-bottom: 0px;}
+                        .o_nav_entry {background: linear-gradient(45deg, #ccccff, #ccccff); 
+                                         background-color: #ccccff!important;border-bottom: 0px;}
+                                         </style>
+                                         </t>
+    <t t-if="request.httprequest.cookies.get('cids') and request.httprequest.cookies.get('cids')[0] == '3'">
+      <style>.o_main_navbar {background: linear-gradient(45deg, #ccffcc, #ccffcc); 
+                                         background-color: #ccffcc!important;border-bottom: 0px;}
+            .dropdown-toggle {background: linear-gradient(45deg, #ccffcc, #ccffcc); 
+                                         background-color: #ccffcc!important;border-bottom: 0px;}
+            .o_nav_entry {background: linear-gradient(45deg, #ccffcc, #ccffcc); 
+                                         background-color: #ccffcc!important;border-bottom: 0px;}</style></t>
+  </xpath>
+</data>
