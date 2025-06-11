@@ -57,3 +57,16 @@
                                          background-color: #ccffcc!important;border-bottom: 0px;}</style></t>
   </xpath>
 </data>
+
+
+
+
+// INITIER UNE DB DANS UN CONTENEUR ODOO 
+
+
+odoo -d cotation_db -i base \
+--db_host=37.187.54.225 \
+--db_port=5432 \
+--db_user=admin-az \
+--db_password=admin-az@123 \
+--addons-path=/mnt/extra-addons,/usr/lib/python3/dist-packages/odoo/addons
